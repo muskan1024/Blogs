@@ -14,6 +14,14 @@ const AdminPanel = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
     const [categories, setCategories] = useState([]);
 
+    function showAlert() {
+        var myText = "Category created succesfully";
+                            alert (myText);
+      }
+    function showAlert1() {
+        var myText1 = "Post created succesfully";
+                            alert (myText1);
+      }
 
     const addPost = async (e) => {
         e.preventDefault();
@@ -51,7 +59,7 @@ const AdminPanel = () => {
     };
 
 
-    
+
 
     useEffect(() => {
         // Fetch all categories on page load
@@ -161,6 +169,7 @@ const AdminPanel = () => {
                 <button
                     type="submit"
                     className="bg-blue-500 text-white font-extrabold py-2 px-4 rounded hover:bg-blue-600"
+                    onClick={showAlert1}
                 >
                     Publish
                 </button>
@@ -205,9 +214,12 @@ const AdminPanel = () => {
                     <button
                         type="submit"
                         className="bg-blue-500 text-white font-extrabold py-2 px-4 rounded hover:bg-blue-600"
+                        onClick={showAlert}
                     >
                         Publish
                     </button>
+
+   
                 </div>
             </form>
         </div>
