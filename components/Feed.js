@@ -49,15 +49,8 @@ export default function Feed() {
     return (
         <div>
             <div className=' h-96'>
-                {/* <img className='w-[100%] h-[100%]' src='https://www.wsiaxon.com/wp-content/uploads/2016/10/Blogging.png'/> */}
-                {/* <img className='absolute w-[100%] h-[100%] bg-black' src='bg.png'/> */}
                 <img className='w-[100%] h-[100%] relative z-10 bg-blue-300' src='Blogging-removebg-preview.png' />
             </div>
-            {/* <div>
-                <h1>Blogers</h1>
-                <h1>Blogging</h1>
-                <h1>Blogs</h1>
-            </div> */}
             <h1 className='relative z-10 text-4xl font-bold text-black p-4 text-center'>Blogs</h1>
             <div className="relative z-10 grid gap-10 mx-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 bg-blue-200 p-4 rounded-lg">
                 {blogPosts.map((post) => (
@@ -99,7 +92,7 @@ export default function Feed() {
                 ))}
             </div>
             <h1 className='relative z-10 text-4xl font-bold text-black p-4 text-center'>Categories</h1>
-            <div className="relative z-10 grid gap-10 mx-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 bg-blue-200 p-4 rounded-lg">
+            <div className="relative z-10 grid gap-10 mx-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 bg-blue-200 p-4 rounded-lg mb-7">
                 {category.map((category) => (
                     <motion.div
 
